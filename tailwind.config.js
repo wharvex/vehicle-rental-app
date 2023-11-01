@@ -13,7 +13,7 @@ module.exports = {
       },
       spacing: {},
       fontFamily: {
-        "reg-medium": "'Fira Sans'",
+        "reg-heading": "'Fira Sans'",
         "hfb-extra-small": "Cabin",
       },
       borderRadius: {
