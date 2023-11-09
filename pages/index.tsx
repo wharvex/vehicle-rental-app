@@ -24,6 +24,10 @@ const Home: NextPage = () => {
     router.push("/confirm-reservation");
   }, [router]);
 
+  const onBrowseClick = useCallback(() => {
+    router.push("/browse-lots");
+  }, [router]);
+
   return (
     <>
       <div className="relative bg-white w-full overflow-hidden flex flex-col items-center justify-start py-2.5 px-36 box-border gap-[10px]">
@@ -55,7 +59,10 @@ const Home: NextPage = () => {
                 />
               </div>
             </div>
-            <button className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-col items-center justify-center">
+            <button 
+              className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-col items-center justify-center"
+              onClick={onBrowseClick}
+            >
               <div className="box-border w-[214px] h-[82px] flex flex-row items-start justify-start border-[2px] border-solid border-black">
                 <div className="self-stretch flex-1 relative text-21xl tracking-[0.5px] leading-[100%] font-medium font-hfb-extra-small text-black text-center flex items-center justify-center">
                   Browse
